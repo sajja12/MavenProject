@@ -2,9 +2,7 @@ package com.cg.fms.dto;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -24,16 +22,6 @@ public class Product {
 	@Column(name="Product_Description")
 	public String productDescription;	
 	
-//	@OneToOne
-//	private Contract contract;
-//	
-//	
-//	public Contract getContract() {
-//		return contract;
-//	}
-//	public void setContract(Contract contract) {
-//		this.contract = contract;
-//	}
 	public Product() {
 		
 	}

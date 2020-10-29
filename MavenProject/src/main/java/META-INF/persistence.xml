@@ -8,7 +8,7 @@
 	<persistence-unit name="Forest_BU" transaction-type="RESOURCE_LOCAL">
 
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
-		<class>com.cg.fms.dto.Product</class>
+		<class>com.cg.fms.dto.Contract</class>
 		<properties>
 
 			<!-- jdbc properties -->

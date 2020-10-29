@@ -1,10 +1,9 @@
 package com.cg.fms.ui;
 
-import java.util.ArrayList;
+
 import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
-
 import com.cg.fms.dto.Product;
 import com.cg.fms.exceptions.DataNotFoundException;
 import com.cg.fms.service.IProductService;

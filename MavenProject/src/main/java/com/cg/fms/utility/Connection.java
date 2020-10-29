@@ -2,11 +2,7 @@ package com.cg.fms.utility;
 
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-/**
- * 
- * @author Admin
- *
- */
+
 public class Connection {
 
 	static EntityManagerFactory factory = null;
