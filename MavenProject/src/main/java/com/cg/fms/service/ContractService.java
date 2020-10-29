@@ -8,7 +8,7 @@ import com.cg.fms.dto.Contract;
 
 public class ContractService implements IContractService{
 	IContractDao dao=new ContractDao();
-	
+//comment from priyank	
 	public boolean addContract(Contract Contract) {
 		// TODO Auto-generated method stub
 		if(dao.addContract(Contract)) {
