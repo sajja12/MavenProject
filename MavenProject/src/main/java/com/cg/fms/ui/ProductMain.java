@@ -143,7 +143,7 @@ public class ProductMain
 				case 6:
 					return;
 				default:
-					System.out.println("Enter a valid option[1-5]");			
+					System.out.println("Enter a valid option[1-6]");			
 					}
 				
 			}

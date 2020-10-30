@@ -35,15 +35,21 @@ public class ContractMain
 			int ch=scanner.nextInt();
 			switch(ch)
 			{
+
+			/*
+			 * This function will call the service layer method and service layer calls the Dao layer and return the contract
+			 * object which is populated by the information of the given.
+			 */
 				case 1:
 				{
+					// Reading and setting the values for the addContract
 					System.out.println("enter the contractNumber");
 					String contractNumber=scanner.next();
-					System.out.println("enter the Contract name ");
+					System.out.println("enter the delivery place ");
 					String deliveryPlace=scanner.next();
-					System.out.println("enter the Contract Quantity");
+					System.out.println("enter the delivery date");
 					String deliveryDate=scanner.next();
-					System.out.println("enter the Contract Description");
+					System.out.println("enter the quantity");
 					String quantity=scanner.next();
 					Contract p= new Contract(contractNumber, deliveryPlace, deliveryDate, quantity);
 					if(service.addContract(p))
@@ -57,6 +63,10 @@ public class ContractMain
 					
 				}
 				break;
+				/*
+				 * This function will call the service layer method and service layer calls the Dao layer and return the contract
+				 *  details with respect to productId.
+				 */
 				case 2:
 				{
 					System.out.println("enter the Contract you want to get ");
@@ -75,6 +85,10 @@ public class ContractMain
 				
 				}
 				break;
+				/*
+				 * This function will call the service layer method and service layer calls the Dao layer and return the contract
+				 * details with updated values
+				 */
 				case 3:
 					System.out.println("Enter the id of Contract whose Contract name should be updated");
 					contractNumber=scanner.next();
@@ -96,6 +110,10 @@ public class ContractMain
 						throw new DataNotFoundException(" Contract's id,Contract name are  not updated!"); 
 					}
 					break;
+					/*
+					 * This function will call the service layer method and service layer calls the Dao layer and return the 
+					 * deleted contract.
+					 */
 				case 4:
 					System.out.println("Enter the id  that you want to delete:");
 					String contractNumber=scanner.next();
@@ -108,6 +126,10 @@ public class ContractMain
 						System.out.println(e.getMessage());
 					}
 					break;
+					/*
+					 * This function will call the service layer method and service layer calls the Dao layer and return the 
+					 * list of all contracts present in the database.
+					 */
 				case 5:
 					List<Contract> list=service.getAllContract();
 					 Iterator<Contract> iterator=list.iterator();
@@ -117,6 +139,12 @@ public class ContractMain
 						System.out.println(record);
 					 }
 					 break;
+				case 6:
+					return;
+				default:
+					System.out.println("Enter a valid option[1-6]");			
+					
+				
 				}
 				
 			}

@@ -1,6 +1,4 @@
 package com.test;
-
-
 	import java.util.ArrayList;
 	import java.util.List;
 
@@ -44,6 +42,8 @@ package com.test;
 						Assertions.assertEquals("3", productRecord1.getProductQuantity());
 						Assertions.assertEquals("sandal used for beauty", productRecord1.getProductDescription());
 						Assertions.assertNotEquals("true",productRecord1.getProductName());
+						Assertions.assertNotEquals("true",productRecord1.getProductQuantity());
+						Assertions.assertNotEquals("true",productRecord1.getProductDescription());
 					}
 				}
 				
@@ -77,4 +77,3 @@ package com.test;
 		}
 
 	}
-
